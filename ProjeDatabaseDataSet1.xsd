@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProjeDatabaseDataSet1" targetNamespace="http://tempuri.org/ProjeDatabaseDataSet1.xsd" xmlns:mstns="http://tempuri.org/ProjeDatabaseDataSet1.xsd" xmlns="http://tempuri.org/ProjeDatabaseDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProjeDatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProjeDatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.VeterinerOtomasyonu.Properties.Settings.GlobalReference.Default.ProjeDatabaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MusteriRandevulariTableAdapter" GeneratorDataComponentClassName="MusteriRandevulariTableAdapter" Name="MusteriRandevulari" UserDataComponentName="MusteriRandevulariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProjeDatabaseConnectionString (Settings)" DbObjectName="ProjeDatabase.dbo.MusteriRandevulari" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT VeterinerID FROM dbo.MusteriRandevulari</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="VeterinerID" DataSetColumn="VeterinerID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProjeDatabaseDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ProjeDatabaseDataSet1" msprop:Generator_DataSetName="ProjeDatabaseDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MusteriRandevulari" msprop:Generator_RowEvHandlerName="MusteriRandevulariRowChangeEventHandler" msprop:Generator_RowDeletedName="MusteriRandevulariRowDeleted" msprop:Generator_RowDeletingName="MusteriRandevulariRowDeleting" msprop:Generator_RowEvArgName="MusteriRandevulariRowChangeEvent" msprop:Generator_TablePropName="MusteriRandevulari" msprop:Generator_RowChangedName="MusteriRandevulariRowChanged" msprop:Generator_RowChangingName="MusteriRandevulariRowChanging" msprop:Generator_TableClassName="MusteriRandevulariDataTable" msprop:Generator_RowClassName="MusteriRandevulariRow" msprop:Generator_TableVarName="tableMusteriRandevulari" msprop:Generator_UserTableName="MusteriRandevulari">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VeterinerID" msprop:Generator_ColumnPropNameInRow="VeterinerID" msprop:Generator_ColumnPropNameInTable="VeterinerIDColumn" msprop:Generator_ColumnVarNameInTable="columnVeterinerID" msprop:Generator_UserColumnName="VeterinerID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
